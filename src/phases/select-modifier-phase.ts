@@ -281,7 +281,8 @@ export class SelectModifierPhase extends BattlePhase {
     // Apply Black Sludge to reroll cost
     const modifiedRerollCost = new NumberHolder(baseMultiplier);
     this.scene.applyModifier(HealShopCostModifier, true, modifiedRerollCost);
-    return modifiedRerollCost.value;
+    //return modifiedRerollCost.value;
+    return 0;
   }
 
   getPoolType(): ModifierPoolType {
